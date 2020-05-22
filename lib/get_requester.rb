@@ -20,7 +20,7 @@ end
     parsed = JSON.parse(self.get_response_body)
     binding.pry
     parsed.collect do |name|
-      data
+      name
   end
 end
 
