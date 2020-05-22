@@ -19,8 +19,8 @@ end
   def parse_json
     parsed = JSON.parse(self.get_response_body)
     binding.pry
-    parsed.collect do |data|
-      data["structures"]
+    parsed.collect do |name|
+      data
   end
 end
 
