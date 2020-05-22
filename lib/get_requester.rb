@@ -7,7 +7,7 @@ def initialize(url)
 end
 
   def get_response_body
-    uri = URI.parse(@url)
+    uri = uri.parse(@url)
     response = Net::HTTP.get_response(uri)
     response.body
   end
